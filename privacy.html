@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Garage</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui; max-width: 760px; margin: 36px auto; padding: 0 22px; line-height: 1.55; }
+  h1 { margin-bottom: 0; }
+  h2 { margin-top: 28px; }
+  small { color: #777; }
+</style>
+</head>
+<body>
+<h1>Garage Privacy Policy</h1>
+<small>Last updated: 2026-05-19</small>
+
+<h2>1. The short version</h2>
+<p>Garage is a fully on-device iOS application. The developer (atrium) operates no servers, no analytics pipelines, and no data warehouse in connection with Garage. We collect nothing because we have nowhere for it to go.</p>
+
+<h2>2. What stays on your iPhone</h2>
+<p>Every vehicle profile, fuel log, maintenance entry, insurance policy, registration, repair record, mileage trip, and receipt photo you create lives in a SwiftData store on your device, protected by Apple's standard file protection (NSFileProtectionComplete — only readable after the device is unlocked).</p>
+<p>VIN numbers and insurance policy numbers are stored in Apple's iOS Keychain under the access level <code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code>. They never leave the device.</p>
+
+<h2>3. iCloud sync (optional)</h2>
+<p>If you turn on iCloud sync in Settings, your SwiftData store is mirrored to your private iCloud database using Apple's CloudKit. CloudKit is operated by Apple under Apple's terms; data in transit and at rest is encrypted by Apple. The developer (atrium) cannot read this database.</p>
+
+<h2>4. Camera, photo library, and location</h2>
+<p>If you use the receipt scanner, the camera or selected photo is processed locally with Apple's Vision framework. Images are not uploaded anywhere. Location, when granted, is used solely to auto-fill the gas station name on the in-progress fuel log; the coordinates are never transmitted and are only saved to the log entry if you choose to.</p>
+
+<h2>5. Notifications</h2>
+<p>Garage uses Apple's local notification service (UNUserNotificationCenter) to alert you about upcoming maintenance, insurance renewals, and inspection deadlines. There is no remote-push channel; reminders are scheduled directly on the device.</p>
+
+<h2>6. Subscriptions</h2>
+<p>Subscription purchases are processed by Apple's StoreKit. Apple shares with the developer aggregate payment metadata required to operate the subscription (e.g., your country and currency, the product purchased, and the transaction ID). Apple does not share your Apple ID, name, email, or payment method with the developer. See <a href="https://www.apple.com/legal/privacy/data/en/itunes-store/">Apple's iTunes Store privacy notice</a>.</p>
+
+<h2>7. Analytics, ads, third parties</h2>
+<p>Garage does not include any analytics SDK, crash-reporting SDK, advertising SDK, or third-party tracking code. The binary's linked libraries (verifiable via <code>otool -L</code>) are Apple system frameworks only.</p>
+
+<h2>8. Your rights</h2>
+<p>Because we hold no data about you, requests under GDPR, CCPA, or similar laws can be satisfied entirely by you: delete the app to delete all on-device data, or sign out of your iCloud account to revoke synced copies. There is nothing else to delete because we never received it.</p>
+
+<h2>9. Children</h2>
+<p>Garage is not directed at children under 13.</p>
+
+<h2>10. Changes</h2>
+<p>If we ever materially change this policy, the new version will appear here with a new "last updated" date and an in-app notice on next launch.</p>
+
+<h2>11. Contact</h2>
+<p>Email: jasperabundant@gmail.com</p>
+
+<p><a href="index.html">← Back</a></p>
+</body>
+</html>
